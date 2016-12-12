@@ -1,14 +1,27 @@
 <div class="container">
   <div class="login">
     <div class="text">
-      Please login with one of following providers.
-    </div>
-
-    <div class="buttons">
-      <button md-raised-button color="primary" (click)="login('Facebook')">Facebook</button>
-      <button md-raised-button color="primary" (click)="login('Google')">Google</button>
-      <button md-raised-button color="primary" (click)="login('Twitter')">Twitter</button>
-      <button md-raised-button color="primary" (click)="login('Github')">GitHub</button>
+      Please choose a login provider
+        <md-card>
+          <button md-raised-button (click)="login('google')">
+            <img width="30" src="/assets/google-logo.png" />Google
+          </button>
+        </md-card>
+        <md-card>
+          <button md-raised-button (click)="login('facebook')">
+            <img width="30" src="/assets/facebook-logo.png" />Facebook
+          </button>
+        </md-card>
+        <md-card>
+          <button md-raised-button (click)="login('twitter')">
+            <img width="30" src="/assets/twitter-logo.png" />Twitter
+          </button>
+        </md-card>
+        <md-card>
+          <button md-raised-button (click)="login('github')">
+            <img width="30" src="/assets/github-logo.png" />Github
+          </button>
+        </md-card>
     </div>
   </div>
 </div>
